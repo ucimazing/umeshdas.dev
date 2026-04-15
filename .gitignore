@@ -11,3 +11,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
