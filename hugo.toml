@@ -1,0 +1,94 @@
+baseURL = "https://umeshdas.dev/"
+languageCode = "en-us"
+title = "Umesh Das"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Umesh Das"
+description = "DevOps engineer on the road to SRE. Writing about Kubernetes, observability, Azure, and the path out of a service company."
+keywords = ["SRE", "DevOps", "Kubernetes", "Azure", "Observability", "Go"]
+author = "Umesh Das"
+DateFormat = "Jan 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+[params.homeInfoParams]
+Title = "Umesh Das"
+Content = """
+DevOps engineer transitioning to Site Reliability Engineering.
+
+I write about what I break, fix, and learn — Kubernetes, observability, Go, Azure, and the path from a service-company analyst to a remote SRE role.
+
+Currently building **fasttransfer** (a WebRTC-based file transfer platform) as a production SRE portfolio: AKS-hosted, Prometheus-instrumented, chaos-tested.
+"""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/umeshdas"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/umeshdas"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+[params.assets]
+disableHLJS = true
+favicon = "/favicon.ico"
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 30
+
+[markup]
+[markup.highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+lineNos = false
+style = "monokai"
